@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+management:
+  context-path: /admin
+
+spring:
+  application:
+    name: configServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ziftytodd/gr8conf2016-config.git
+
